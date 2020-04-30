@@ -1,4 +1,16 @@
-/*CSS*/
+ /*CSS
+
+BOX
+    largura
+    altura 
+    conteudo da caixa
+
+    Espaçamentos
+    Preenchimento
+    Bordas 
+    
+    Posicionamentos
+*/
 
 body {
     background: #e5e5e5;
@@ -9,7 +21,9 @@ body {
     margin: 0;
 }
 
-
+.hide {
+    display: none;
+}
 
 a {
     color: #ff5E84;
@@ -17,11 +31,13 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-    text-decoration: underline;    
+a:hover {
+    color: #ff5E84;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-p, description {
+p, .description {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
@@ -30,11 +46,10 @@ p, description {
 #container {
     width: 90%;
     max-width: 980px;
-    
+
     margin: 40px auto;
 
     display: flex;
-
 }
 
 #intro {
@@ -48,9 +63,11 @@ main {
 }
 
 #buttons {
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
+
     margin-bottom: 32px;
+    
 }
 
 button {
@@ -58,10 +75,12 @@ button {
     color: #ff5E84;
 
     border: none;
+
     font-size: 14px;
     font-weight: bold;
     line-height: 18px;
     letter-spacing: 0.2px;
+
     cursor: pointer;
 
     outline: none;
@@ -72,15 +91,15 @@ button:hover {
 }
 
 button.fat {
-    color: white;
     background: #ff5E84;
+    color: white;
 
     width: 150px;
     height: 40px;
 
     border-radius: 6px;
 
-    box-shadow: 0px 8px 16px  #ff5E8432;            
+    box-shadow: 0px 8px 16px #ff5E8432
 }
 
 button.fat:hover {
@@ -89,19 +108,19 @@ button.fat:hover {
 
 footer {
     text-align: center;
-    
+
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.2px;
 
     color: #777;
+
 }
 
 footer a {
     opacity: 0.7;
 }
-
 
 .idea {
     display: flex;
@@ -111,8 +130,7 @@ footer a {
     border-radius: 8px;
 
     padding: 32px;
-
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .idea img {
@@ -128,13 +146,12 @@ footer a {
 
 .idea p {
     margin: 8px 0;
-    color:  #777;
+    color: #777;
 }
 
-.ideo description {
+.idea .description {
     margin: 16px 0;
 }
-
 
 
 /*modal*/
@@ -144,13 +161,13 @@ footer a {
 
     position: absolute;
     top: 0;
-
+    
     width: 100vw;
     height: 100vh;
 
-    
     display: flex;
     justify-content: center;
+
     transition: 400ms;
 }
 
@@ -189,7 +206,7 @@ form input,
 form textarea {
     width: 100%;
 
-    padding: 12 px;
+    padding: 12px;
 
     box-sizing: border-box;
 
@@ -208,7 +225,6 @@ form label {
 }
 
 form a {
-
     width: 150px;
     height: 40px;
 
@@ -253,7 +269,6 @@ form button {
     justify-self: end;
 
     transition: 400ms;
-
 }
 
 form button:hover {
@@ -267,3 +282,4 @@ form button:hover {
     opacity: 0;
     visibility: hidden;
 }
+ 
